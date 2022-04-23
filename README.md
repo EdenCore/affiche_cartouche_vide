@@ -5,7 +5,7 @@ Script en python qui permet d'afficher les cartouches vide
 - python
 - selenium
 - beautifulsoup
-- gecko 
+- gecko (l'exécutable doit être dans le même dossier que le script)
 - webdriver-manager
 - webdrivermanager
 - tabulate
