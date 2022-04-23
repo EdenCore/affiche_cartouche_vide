@@ -17,4 +17,4 @@ Script en python qui permet d'afficher les cartouches vide
 nom_du_mopieur,addresse_ip
 
 ```
-L'élément "nom_mopieur" peut être ce que vous voulez.
+L'élément "nom_du_mopieur" peut être ce que vous voulez.
