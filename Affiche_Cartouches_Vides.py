@@ -29,8 +29,8 @@ fichier_mopieur = open(os.path.dirname(os.path.abspath(__file__))+'/liste_mopieu
 data_mopieur = str(fichier_mopieur.readline())
 # C'est pour éviter de recopier plusieurs fois le dsp
 while data_mopieur != '':
-    ip_mopieur = 'http://' + str(data_mopieur[11:len(data_mopieur)])
-    dsp_mopieur = str(data_mopieur[:10])
+    ip_mopieur = 'http://' + str(data_mopieur[data_mopieur.index(',')+1:len(data_mopieur)])
+    dsp_mopieur = str(data_mopieur[:data_mopieur.index(',')])
     page = driver.get(ip_mopieur)
     soup = BeautifulSoup(driver.page_source,features='html.parser')
     ligne_resultat = []
